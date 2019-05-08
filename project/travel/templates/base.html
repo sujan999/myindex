@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block meta_links%}
+
+    {% endblock %}
+    <!-- template tags-->
+    {% load static %}
+
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    {% block style_links %}
+
+    {% endblock %}
+</head>
+<body>
+    <!-- place header component here-->
+    
+ i am base.
+    
+    <!-- this place is for other templates-->
+    {% block content %}
+
+
+    {% endblock content %}
+</body>
+    <!-- place footer component here -->
+    <footer id="my-footer">
+   
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    {% block script_links %}
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>
+
